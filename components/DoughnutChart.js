@@ -1,7 +1,9 @@
 import { Doughnut } from 'react-chartjs-2'
 
 export default function DoughnutChart( {criticals, deaths, recoveries} ) {
+    console.log(recoveries)
     return (
+        
         <Doughnut 
             data = {
                 {

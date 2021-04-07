@@ -5,7 +5,7 @@ import toNum from '../../helpers/toNum';
 
 export default function Search({data}) {
 
-	// console.log(data);
+	console.log(data);
 
 	const countriesStats = data.countries_stat;
 	// state to store the value of the input field
@@ -25,7 +25,7 @@ export default function Search({data}) {
 		// .find method returns an object that meets the condition provided 
 		const match = countriesStats.find(country => country.country_name.toLowerCase() === targetCountry.toLowerCase());
 
-		// console.log(match);
+		console.log(match);
 
 		if (match) {
 
@@ -33,6 +33,7 @@ export default function Search({data}) {
 			setCriticals(toNum(match.serious_critical));
 			setDeaths(toNum(match.deaths));
 			setRecoveries(toNum(match.total_recovered));
+			console.log(match.total_recovered)
 
 		} else {
 
