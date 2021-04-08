@@ -10,7 +10,7 @@ export default function NaviBar() {
 		    <Navbar.Toggle aria-controls="basic-navbar-nav" />
 		    <Navbar.Collapse id="basic-navbar-nav">
 		        <Nav className="mr-auto">
-		            <Link href="/">
+		            <Link href="/covid/countries">
 		                <a className="nav-link" role="button">
 		                    Infected Countries
 		                </a>
